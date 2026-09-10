@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toni's Website</title>
+    <style>
+        /* for my img row stuff */
+    .image-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  img {
+    height: 350px;      /* Forces all images to be the same height */
+    width: auto;        /* Automatically adjusts the width proportionally */
+    margin: 10px;       /* Adds spacing between them */
+  }
+
+  .search-container {
+    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+</style>
+
+
 </head>
 <body>
-    
+    <h1 style="text-align: center;">A Collection of Kamen Riders</h1>
+    <hr>
+
+<div class="search-container">
+    <input type="text" placeholder="Search..." />
+    <button type="button">Search</button>
+</div>
+
+
+<div class="image-row">
+    <figure class="gallery-item">
+        <img src="kamen_rider_decade_by_prasblacker_ddlkczd.png" alt="Kamen Rider Decade">
+        <figcaption>This is Tsukasa Kudoya also known as Kamen Rider Decade. His motif is Barcodes and the number ten.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="kamen_rider_kuuga_by_prasblacker_ddljgcw.png" alt="Kamen Rider Kuuga">
+         <figcaption>This is Yosuke Godai also known as Kamen Rider Kuuga. His motif is a stag beetle.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="kamen_rider_kabuto_by_prasblacker_ddlji2m.png" alt="Kamen Rider Kabuto">
+         <figcaption>This is Souji Tendou also known as Kamen Rider Kabuto. His motif is insects, more specifically the Japanese rhino beetle.</figcaption>
+    </figure>
+<figure class="gallery-item">
+    <img src="kamen_rider_gaim_render_by_decade1945_de2fg2g.png" alt="Kamen Rider Gaim">
+     <figcaption>This is Kouta Kazuraba also known as Kamen Rider Gaim. His motif is fruits, warriors, and armor.</figcaption>
+</figure>
+
+<figure class="gallery-item">
+    <img src="kamen_rider_gavv_render_by_stainrender_dhukbgo.png" alt="Kamen Rider Gavv">
+     <figcaption>This is Shoma Inoue also known as Kamen Rider Gavv. His motif is candy and snack foods.</figcaption>
+</figure>
+    </div>
 </body>
 </html>
