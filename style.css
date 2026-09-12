@@ -1,0 +1,45 @@
+
+        /* for my img row stuff */
+    .image-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 250px;
+}
+
+  img {
+    height: 320px;      /* forces all img to be same height */
+    width: auto;        /* automatically adjusts the width proportionally */
+    margin: 10px;       /* adds spacing btwn them */
+    object-fit: cover;
+  }
+
+  .search-container {
+    display: flex;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+
+   figure {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  figcaption {
+    font-size: small;
+    color: black;
+    margin-top: 5px;
+  }
+
+  h1 {
+    text-align: center;
+  }
