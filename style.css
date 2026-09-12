@@ -1,45 +1,169 @@
+/* reset & base */
+* {
+    box-sizing: border-box;
+}
 
-        /* for my img row stuff */
-    .image-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    background-color: #f4f1fa;
+    color: #2b2b2b;
+    margin: 0;
+    padding-bottom: 40px;
+}
 
-    .gallery-item {
+h1, h2 {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-top: 2px solid #c9b8f0;
+}
+
+/* nav bar */
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #4b2e83;
+    padding: 15px 0;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.topnav a:hover {
+    background-color: #6b46c1;
+}
+
+.topnav a.active {
+    background-color: #8a5cf7;
+}
+
+/* image gallery */
+.image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
     background: white;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     padding: 15px;
     width: 250px;
+    transition: transform 0.2s ease;
 }
 
-  img {
-    height: 320px;      /* forces all img to be same height */
-    width: auto;        /* automatically adjusts the width proportionally */
-    margin: 10px;       /* adds spacing btwn them */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+img {
+    height: 320px;
+    width: auto;
+    max-width: 100%;
+    margin: 10px;
     object-fit: cover;
-  }
+    border-radius: 6px;
+}
 
-  .search-container {
-    display: flex;
-    max-width: 400px;
-    margin: 50px auto;
-  }
-
-   figure {
+figure {
     text-align: center;
     margin: 20px auto;
-  }
+}
 
-  figcaption {
+figcaption {
     font-size: small;
     color: black;
     margin-top: 5px;
-  }
+}
 
-  h1 {
-    text-align: center;
-  }
+/* search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    gap: 8px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #c9b8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #6b46c1;
+}
+
+/* form page */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c9b8f0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button[type="submit"]:hover {
+    background-color: #6b46c1;
+}
